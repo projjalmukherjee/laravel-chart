@@ -21,6 +21,7 @@ Route::get('/', function () {
 Route::get('/bitcoin',function(){
     
     return view('bitcoin.bitcoin');
+    
 });
 
 Route::post('/chart-json',[BitcoinController::class,'callchartApi']);
